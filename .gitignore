@@ -1,4 +1,4 @@
 /tg_bot_invest_pofile
-/bot_log
+bot_log/*
 /bot_config.py
 __pycache__
