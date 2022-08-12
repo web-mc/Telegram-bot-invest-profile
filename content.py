@@ -5,12 +5,6 @@ from aiogram.utils.callback_data import CallbackData
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton, ReplyKeyboardMarkup, KeyboardButton
 
 
-
-
-# phone_btn = InlineKeyboardButton('Я согласен(а) отправить номер телефона', callback_data='phone')
-# no_phone_btn = InlineKeyboardButton('Не отправлю номер', callback_data='no_phone')
-# get_phone = InlineKeyboardMarkup().add(phone_btn).add(no_phone_btn)
-
 start_btn = InlineKeyboardButton('Да', callback_data='start_quiz')
 dont_start_btn = InlineKeyboardButton('Нет', callback_data='dont_start_quiz')
 quiz = InlineKeyboardMarkup().add(start_btn).add(dont_start_btn)
@@ -171,10 +165,3 @@ profiles = {
 
         "Агрессивный": "<b>Агрессивный</b>\n\n<b> - Акции 80%</b>\n<b> -  Облигации 15%</b>\n<b> - Деньги 5%</b>\n\nДля инвесторов, которые готовы пойти на значительный риск.\n\nОсновное внимание направлено на рост стоимости портфеля выше среднего на долгосрочном горизонте. В данной модели инвесторы готовы к высокой волатильности портфеля и значительным рискам в расчете получить максимальную прибыль от инвестиций.\n\nТиповой портфель включает различные классы активов, при этом сильно смещен в сторону акций."
 }
-
-
-# ReplyKeyboardMarkup, KeyboardButton
-send_phone = KeyboardButton('Поделиться через телеграм', request_contact=True)
-# send_phone_by_hand = KeyboardButton('Ввести вручную')
-no_phone = KeyboardButton('Нет, не оставлю телефон')
-contact_button = ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True).add(send_phone).add(no_phone)
